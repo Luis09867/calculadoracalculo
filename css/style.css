@@ -1,0 +1,151 @@
+:root{
+    --fondo:#e91313da;
+    --primario: #f0a04b;
+    --FUENTE: #e1eedd;
+    --fuente-claro: #FEFBE9;
+
+}
+
+body{
+    background-image: url(fondo.jpg) ;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.contenedor{
+    width: 315px;
+    height: 160px;
+    background-image: linear-gradient(
+        150deg,
+        #8a2be2,
+        #ff7f50,
+        #ffd700
+    );
+    border: 7px;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 12px;
+    clip-path: circle(50% at top left);
+    transition-property: clip-path;
+    transition-duration: 2s;
+
+}
+.contenedor a {
+    color: var(--FUENTE);
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+
+.contenedor:hover{
+    box-shadow: 5px 5px 50px var(--fuente-claro);
+   clip-path: circle(150% at top left);
+    
+}
+
+
+
+.contenedor a img{
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+section{
+    width: 100vw;
+    height: 100ch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+section img{
+    width: 375px;
+    border-radius: 60px;
+
+}
+h2{
+    color: black;
+    width: 350px;
+    border-radius: 8px;
+    
+    background: seagreen;
+    opacity: 0.75;
+}
+form{
+    color: var(--FUENTE);
+    font-size: 20px;
+}
+input{
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--FUENTE);
+   background: cornflowerblue;
+    border-radius: 60px;
+    font-size: 20px;
+    padding-left: 17px;
+    margin: 5px;
+}
+input:hover{
+    box-shadow: 5px 5px 50px var(--fuente-claro);  
+    background: darkkhaki;
+    transition: 2s;
+    border-radius: 60px;
+
+}
+
+    
+
+input:focus{
+    outline: 2px solid gray;
+    border-radius: 30px;
+    
+}
+.boton-regresar{
+    display: block;
+     width: 150px;
+     height: 50px;
+     background: #ffd700;
+     border-radius: 40px;
+     text-align: center;
+     padding-top: 10px;
+     box-sizing: border-box;
+     color: var(--fondo);
+     text-decoration: none;
+     transition: 2s;
+     
+     
+    
+
+}
+
+.boton-regresar:hover{
+    box-shadow: 5px 5px 50px var(--fuente-claro); 
+    background:mediumturquoise;
+    border-radius: 40px;
+      
+}
+td{
+    color: black;
+    background: darkgrey;
+    border-radius: 40px;
+    opacity: 0.75;
+  
+    
+    
+    
+}
